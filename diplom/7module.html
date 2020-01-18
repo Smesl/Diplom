@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="7module.css">
+    <link rel="stylesheet" href="7moduleMedia.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="wrap header-wrap">
+            <div id="menu__burger">
+                <input type="checkbox" />
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
+            <nav class="menu header__menu">
+                <ul class="menu__list hide">
+                    <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Портфолио</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Стоимость</a></li>
+                </ul>
+            </nav>
+            <div class="menu5 qa">
+                <ul>
+                    <li class="menu__li"><a href="#">Услуги</a></li>
+                    <li class="menu__li"><a href="#">Портфолио</a></li>
+                    <li class="menu__li"><a href="#">Стоимость</a></li>
+                </ul>
+            </div>
+
+            <div class="header-section">
+                <div class="header-section__phone">+7(499)995-55-77</div>
+                <a class="header-section__button" href="#form">Заказать звонок</a>
+                <span class="feedback__button"></span>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="main-content__center">
+            <div class="wrap">
+                <div class="main-content__biography">
+                    <div class="main-content__biography__name">Максим Мазуренко</div>
+                    <div class="main-content__biography__frontend">Frontend-разработчик и веб-верстальщик</div>
+                    <button class="main-content__biography__button">Узнать больше</button>
+                </div>
+            </div>
+            <span class="bracket">&#123; &#125;</span>
+            <span class="lattice">&#35;</span>
+            <span class="parentheses">&#x3C; &#x2044; &#x3E;</span>
+            <span class="parentheses-div">&#x3C;div&#x3E;</span>
+            <span class="parentheses-div2">&#x3C;div&#x3E;</span>
+            <span class="parentheses__map-case">&#x3C; &#x2044; &#x3E;</span>
+            <div class="main-content__man"><img src="img/man.png"></div>
+
+            <canvas  width="800" height="630" id="myCanvas">Эллипс</canvas>
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext('2d');
+
+                gradient = ctx.createLinearGradient(180, 300, 300, 0);
+                gradient.addColorStop(0, '#ff8f5a');
+                gradient.addColorStop(1, '#ff2f96');
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.moveTo(70, 630);
+                ctx.bezierCurveTo(-110, 305, 930, -580, 930, 630);
+                ctx.fill();
+            </script>
+
+            <canvas width="800" height="630" id="myCanvas__two">Эллипс</canvas>
+            <script>
+                var c = document.getElementById("myCanvas__two");
+                var ctx = c.getContext('2d');
+                gradient = ctx.createLinearGradient(180, 300, 300, 0);
+                gradient.addColorStop(0, '#ff8f5a');
+                gradient.addColorStop(1, '#ff2f96');
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.moveTo(70, 630);
+                ctx.bezierCurveTo(-110, 355, 930, -430, 930, 630);
+                ctx.fill();
+            </script>
+
+            <canvas width="600" height="630" id="myCanvas__three">Эллипс</canvas>
+            <script>
+                var c = document.getElementById("myCanvas__three");
+                var ctx = c.getContext('2d');
+                gradient = ctx.createLinearGradient(180, 300, 300, 0);
+                gradient.addColorStop(0, '#ff8f5a');
+                gradient.addColorStop(1, '#ff2f96');
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.moveTo(70, 630);
+                ctx.bezierCurveTo(-110, 335, 930, -500, 930, 1500);
+                ctx.fill();
+            </script>
+
+            <canvas width="541" height="530" id="myCanvas__four">Эллипс</canvas>
+            <script>
+                var c = document.getElementById("myCanvas__four");
+                var ctx = c.getContext('2d');
+                gradient = ctx.createLinearGradient(180, 300, 300, 0);
+                gradient.addColorStop(0, '#ff8f5a');
+                gradient.addColorStop(1, '#ff2f96');
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.moveTo(70, 630);
+                ctx.bezierCurveTo(60, 295, 700, -450, 900, 1500);
+                ctx.fill();
+            </script>
+
+            <canvas width="531" height="530" id="myCanvas__five">Эллипс</canvas>
+            <script>
+                var c = document.getElementById("myCanvas__five");
+                var ctx = c.getContext('2d');
+                gradient = ctx.createLinearGradient(180, 300, 300, 0);
+                gradient.addColorStop(0, '#ff8f5a');
+                gradient.addColorStop(1, '#ff2f96');
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                ctx.moveTo(70, 630);
+                ctx.bezierCurveTo(200, 325, 700, -430, 900, 1560);
+                ctx.fill();
+            </script>
+        </div>
+    </main>
+    <section class="my-skills">
+        <div class="wrap">
+            <div class="my-skills__content__center">
+                <h2 class="my-skills_possibilities">Что я делаю</h2>
+                <div class="services">
+                    <div class="my-services">
+                        <div class="my-services__photo"><img src="img/desktop.png" alt="компьютер"></div>
+                            <p>Вёрстка лендинг–страниц<br> и сайтов любой сложности</p>
+                    </div>
+                    <div class="my-services">
+                        <div class="my-services__photo"><img src="img/adaptive.png" alt="компьютер"></div>
+                            <p>Адаптивная вёрстка под все<br> браузеры и устройства</p>
+                    </div>
+                    <div class="my-services">
+                        <div class="my-services__photo"><img src="img/frontend-img.png" alt="компьютер"></div>
+                            <p>Frontend–разработка<br> и программирование</p>
+                    </div>
+                    <div class="my-services">
+                        <div class="my-services__photo"><img src="img/completion-lending.png" alt="компьютер"></div>
+                            <p>Исправление и доработка<br> существующей вёрстки</p>
+                    </div>
+                </div>
+                <button class="my-skills__button">Узнать стоимость</button>
+            </div>
+        </div>
+    </section>
+    <div  class="wrap">
+        <div class="work__examples">Примеры моих работ</div>
+        <div class="position_slider">
+            <div class="swiper-container">
+                <!--<span class="arrow"><img src="img/arrow.png"></span>-->
+                <!--<span class="arrow__right"><img src="img/arrow.png"></span>-->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/project1.png">
+                        <p>Сайт психолога Веры Антоновой</p>
+                    </div>
+                    <div class="swiper-slide"><img src="img/project2.png">
+                        <p>Сайт магазина детской одежды</p>
+                    </div>
+                    <div class="swiper-slide"><img src="img/project3.png">
+                        <p>Сайт магазина «Рыболов»</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <button class="my-works__button">Заказать проект</button>
+            </div>
+        </div>
+    </div>
+    <section class="information">
+            <div class="wrap">
+                <div class="gradient-block__price">Адаптивная вёрстка под все устройства<br>
+                    и браузеры от 1000 рублей всего за 4 часа.*</div>
+                <div class="gradient-block__additionally">* Срок и стоимость могут отличаться от заявленных и рассчитываются
+                    индивидуально,<br> в зависимости от сложности задач.</div>
+            </div>
+        <span class="information__bracket">&#123; &#125;</span>
+        <span class="information__lattice">&#35;</span>
+        <span class="information__parentheses">&#x3C; &#x2044; &#x3E;</span>
+        <span class="information__parentheses-div">&#x3C;div&#x3E;</span>
+        <span class="information__bracket2">&#123; &#125;</span>
+    </section>
+    <footer   class="footer">
+        <div class="wrap">
+            <div class="footer-content">
+                <div class="footer__categories">
+                    <div class="footer__categories__services"><a href="#">Услуги</a></div>
+                    <div class="footer__categories__portfolio"><a href="#">Портфолио</a></div>
+                    <div class="footer__categories__price"><a href="#">Стоимость</a></div>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts__phone"><i class="fa fa-phone" aria-hidden="true"></i><a href="#">+7(499)995-77-55</a></div>
+                    <div class="footer__contacts__mail"><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">dmitry@alekseev.com</a></div>
+                </div>
+                <div class="footer__social-network">
+                    <div class="footer__button"><button class="footer__button__call">Заказать звонок</button></div>
+                    <span class="icon icon-vk"></span>
+                    <span class="icon icon-inst"></span>
+                    <span class="icon icon-facebook"></span>
+                    <span class="icon icon-twitter"></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__color">© Максим Мазуренко, 2019   </div>
+    </footer>
+
+    <div class="popup-call">
+        <form id="form">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="phone" placeholder="Телефон">
+            <button>Отправить</button>
+        </form>
+
+    </div>
+   
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="swiper.min.js"></script>
+    <script src="7module.js"></script>
+</body>
+</html>
