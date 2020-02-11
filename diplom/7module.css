@@ -193,6 +193,9 @@ ul li {
     z-index: 5;
 }
 
+.main-content__biography__a {
+    color: white;
+}
 
 canvas {
     position: absolute;
@@ -1059,6 +1062,7 @@ canvas {
     transform: rotate(45deg);
     opacity: 0;
 }
+
 
 
 .popup-call{
