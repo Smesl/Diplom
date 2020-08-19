@@ -1,25 +1,25 @@
 @font-face {
     font-family: 'Roboto Black';
-    src: url('fonts/Roboto-Black.woff') format('woff');
+    src: url('../fonts/Roboto-Black.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Roboto Light';
-    src: url('fonts/Roboto-Light.woff') format('woff');
+    src: url('../fonts/Roboto-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto Bold';
-    src: url('fonts/Roboto-Bold.woff') format('woff');
+    src: url('../fonts/Roboto-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Roboto Regular';
-    src: url('fonts/Roboto-Regular.woff') format('woff');
+    src: url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -53,20 +53,16 @@ ul li {
     margin: 0 auto;
 }
 
-.header-wrap {
+.header__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
 .menu__list {
     display: flex;
 }
 
-.menu__list{
-    display: flex;
-}
 .menu__list a{
     font-family: 'Roboto Regular';
 }
@@ -80,7 +76,7 @@ ul li {
     margin-top: 35px;
 }
 
-.header-section {
+.header__contacts {
     display: flex;
     align-items: center;
 }
@@ -95,21 +91,20 @@ ul li {
 
 }
 
-.header-section__phone {
+.header__contacts__phone {
     color: #1f1f24;
     font-family: 'Roboto Bold';
     font-size: 25px;
     padding-right: 23px;
 }
-.feedback__button{
-    background-image: url("img/call-answer__button.png");
+.header__contacts__img{
+    background-image: url("../img/call-answer__button.png");
     border-radius: 50%;
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
-    /*box-shadow:  0 0px 0px #ff2f96, 0 0px 5px #ff6922;*/
-    box-shadow: 0px 0px 0px 2px #ff2f96 /*, 0 0px 5px #ff6922*/;
+    box-shadow: 0px 0px 0px 2px #ff2f96;
 }
 
 .border-one {
@@ -117,8 +112,6 @@ ul li {
 }
 
 .menu5 {
-    /* background-image: linear-gradient(to left bottom, #b9005c, #ff6922);
-    width: 200px; */
     position: absolute;
     text-align: center; 
     z-index: 99;
@@ -139,18 +132,18 @@ ul li {
     margin-top: 37px;
 }
 
-.main-content{
+.main-content__center{
     overflow: hidden;
     margin-bottom: 77px;
 }
-.main-content__biography__name {
+.main-content__name {
     font-size: 80px;
     font-family: 'Roboto Black', monospace;
     margin-top: 216px;
     margin-bottom: 13px;
 }
 
-.main-content__biography__frontend {
+.main-content__frontend {
     font-family: 'Roboto Regular';
     font-size: 25px;
     color: #8993ad;
@@ -172,7 +165,7 @@ ul li {
     position: relative;
 }
 
-.header-section__button {
+.header__contacts__button {
     width: 207px;
     height: 45px;
     border: 1px solid #f82370;
@@ -186,9 +179,15 @@ ul li {
     text-align: center;
 }
 
+.header__contacts__button:hover{
+    background-color:#f82370;
+    color: white;
+    transition: 0.3s;
+}
+
 .main-content__man {
     position: absolute;
-    right: 233px;
+    right: 290px;
     top: 66px;
     z-index: 5;
 }
@@ -200,10 +199,10 @@ ul li {
 canvas {
     position: absolute;
     top: 73px;
-    right: 0;
+    right: 0px;
 }
 
-.main-content__biography__button {
+.main-content__button {
     width: 270px;
     height: 60px;
     background-color: #ff4e2e;
@@ -213,6 +212,13 @@ canvas {
     border: 1px solid #ff4e2e;
     font-size: 18px;
     color: white;
+}
+
+.main-content__button:hover {
+    background-color: crimson;
+    border: 1px solid #b9005c;
+    color: #e9e5e5;
+    transition: 0.3s;
 }
 
 .arrow img {
@@ -264,25 +270,25 @@ canvas {
 
 .icon {
     display: inline-block;
-    background-image: url("img/sprites.png");
+    background-image: url("../img/sprites.png");
     height: 53px;
     width: 47px;
 }
 
 .icon.icon-vk {
-    background-position: 71px 0;
-}
-
-.icon.icon-inst {
-    background-position: -74px 0;
+    background-position: 60px 7px
 }
 
 .icon.icon-facebook {
-    background-position: -3px -3px;
+    background-position: -11px 0; 
 }
 
 .icon.icon-twitter {
-    background-position: 155px 0;
+    background-position: 148px 3px; 
+}
+
+.icon.icon-inst {
+    background-position: 230px 3px; 
 }
 
 .bracket {
@@ -301,6 +307,29 @@ canvas {
     animation-iteration-count: 0.5;
     font-family: 'Roboto Bold';
 }
+.bracket:hover {
+    background-image: linear-gradient(to top, #df5f23 0%, #d12185 99%, #da1484 100%);
+}
+
+.lattice:hover {
+    background-image: linear-gradient(to top, #df5f23 0%, #d12185 99%, #da1484 100%);
+}
+
+.parentheses:hover {
+    background-image: linear-gradient(to top, #df5f23 0%, #d12185 99%, #da1484 100%);
+}
+
+.parentheses-div:hover {
+    background-image: linear-gradient(to top, #df5f23 0%, #d12185 99%, #da1484 100%);
+}
+
+.parentheses-div2:hover {
+    background-image: linear-gradient(to top, #df5f23 0%, #d12185 99%, #da1484 100%);
+}
+
+.parentheses__map-case:hover {
+    background-image: linear-gradient(to top, #df5f23 0%, #d12185 99%, #da1484 100%);
+}
 
 @-webkit-keyframes brack {
     0% {
@@ -308,8 +337,8 @@ canvas {
     }
 
     50% {
-        top: 5%;
-        left: 9%;
+        top: 9%;
+        left: 7%;
     }
     100% {
 
@@ -370,7 +399,7 @@ canvas {
 
     50% {
         left: 13%;
-        top: 37%;
+        top: 41%;
     }
     100% {
 
@@ -449,8 +478,8 @@ canvas {
     }
 
     50% {
-        left: 20%;
-        top: 74%;
+        left: 19%;
+        top: 85%;
     }
     100% {
 
@@ -589,9 +618,8 @@ canvas {
     0% {
 
     }
-
     50% {
-        top: 60%;
+        top: 66%;
         left: 49%;
     }
     100% {
@@ -679,12 +707,12 @@ canvas {
     }
 }
 
-.my-skills__content__center {
+.my-skills__content-center {
     text-align: center;
     margin-bottom: 193px;
 }
 
-.my-skills__content__center h2 {
+.my-skills__content-center h2 {
     font-size: 54px;
     padding-bottom: 90px;
     font-family: 'Roboto Bold';
@@ -696,6 +724,9 @@ canvas {
     padding-bottom: 96px;
     flex-wrap: wrap;
 }
+.services ul li {
+    list-style: none;
+}
 
 .my-services p {
     color: #8993ad;
@@ -704,7 +735,7 @@ canvas {
     line-height: 1.4;
 }
 
-.my-services__photo {
+.my-services img {
     padding-bottom: 15px;
 }
 
@@ -728,6 +759,13 @@ canvas {
     border: 1px solid #ff4e2e;
     font-size: 18px;
     color: white;
+}
+
+.my-skills__button:hover {
+    background-color: crimson;
+    border: 1px solid #b9005c;
+    color: #e9e5e5;
+    transition: 0.3s;
 }
 
 .my-works__examples {
@@ -774,6 +812,13 @@ canvas {
     color: white;
 }
 
+.my-works__button:hover{
+    background-color: crimson;
+    border: 1px solid #b9005c;
+    color: #e9e5e5;
+    transition: 0.3s;
+}
+
 .my-works__slider{
     text-align: center;
     padding-bottom: 100px;
@@ -782,7 +827,7 @@ canvas {
     padding-bottom: 95px;
 }
 
-.gradient-block__price{
+.information__price{
     font-size: 45px;
     color: #ffffff;
     padding-top: 80px;
@@ -791,14 +836,20 @@ canvas {
     padding-left: 10%;
     font-family: 'Roboto Regular';
 }
-.gradient-block__additionally{
+.information__additionally{
     padding-bottom: 94px;
     font-size: 18px;
     color: #ffffff;
     padding-left: 10%;
-    font-family: 'Roboto Regular'
+    font-family: 'Roboto Regular';
+    /* padding-left: 13px; */
 }
-.information__bracket{
+
+.information__price__br2 {
+    display: none;
+}
+
+.information__tags__bracket{
     top: 20%;
     left: 10%;
     font-size: 43px;
@@ -811,7 +862,7 @@ canvas {
     position: absolute;
     font-family: 'Roboto Bold';
 }
-.information__lattice{
+.information__tags__lattice{
     bottom: 22%;
     left: 15%;
     font-size: 55px;
@@ -823,7 +874,7 @@ canvas {
     position: absolute;
     font-family: 'Roboto Bold';
 }
-.information__parentheses{
+.information__tags__parentheses{
     right: 11%;
     top: 22%;
     font-size: 38px;
@@ -836,7 +887,7 @@ canvas {
     letter-spacing: -1px;
     font-family: 'Roboto Bold'
 }
-.information__parentheses-div{
+.information__tags__parentheses-div{
     right: 24%;
     bottom: 5%;
     font-size: 29px;
@@ -849,7 +900,7 @@ canvas {
     position: absolute;
     font-family: 'Roboto Bold';
 }
-.information__bracket2{
+.information__tags__bracket2{
     right: 6%;
     bottom: 10%;
     font-size: 43px;
@@ -862,7 +913,7 @@ canvas {
     position: absolute;
     font-family: 'Roboto Bold';
 }
-.work__examples{
+.my-work__examples{
     text-align: center;
     color: #262626;
     font-family: 'Roboto Bold';
@@ -870,7 +921,7 @@ canvas {
     margin-bottom: 95px;
 }
 
-.footer-content{
+.footer{
     display: flex;
     padding-top: 83px;
     padding-bottom: 76px;
@@ -880,8 +931,13 @@ canvas {
     width: 34%;
 }
 
+.footer__categories a:hover{
+    color: #fc557c;
+    border-bottom: 1px solid #fc557c;
+}
+
 .footer__contacts{
-    width: 44%;
+    width: 48%;
 }
 
 .footer__social-network{
@@ -902,6 +958,13 @@ canvas {
     font-size: 16px;
     font-family: 'Roboto Regular';
 }
+
+.footer__button__call:hover{
+    background-color: #f82370;
+    color: white;
+    transition: 0.3s;
+}
+
 .footer__color{
     background-color: #31293c;
     text-align: center;
@@ -942,7 +1005,7 @@ canvas {
     left: 60px;
 }
 .swiper-button-next{
-    background-image: url("img/arrow.png");
+    background-image: url("../img/arrow.png");
     width: 62px;
     height: 60px;
     background-repeat: no-repeat;
@@ -961,7 +1024,7 @@ canvas {
     content: none;
 }
 .swiper-button-prev {
-    background-image: url("img/arrow.png");
+    background-image: url("../img/arrow.png");
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
     width: 62px;
     height: 60px;
@@ -1006,27 +1069,20 @@ canvas {
     font-family: 'Roboto Regular';
 }
 
+
+
 /*Бургер*/
-#menu__burger {
+.menu__burger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 6px;
     z-index: 100;
+    background: white;
+    border: 0;
 }
 
-#menu__burger input {
-    display: flex;
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0; /* hide input */
-    z-index: 1; /* top of the menu */
-
-}
-
-#menu__burger span{
+.menu__burger span{
     width: 45px;
     height: 5px;
     margin-bottom: 8px;
@@ -1041,57 +1097,71 @@ canvas {
     color: transparent;
 }
 
-#span1 {
+.span1 {
     transform-origin: 4px 0px;
 }
 
-#span3 {
+.span3 {
     transform-origin: bottom right;
-}
-
-#menu__burger input:checked ~ #span1 {
-    background-color: #0c2461;
-    transform: rotate(45deg) translate(5px);;
-}
-#menu__burger input:checked ~ #span2 {
-    background-color: #0c2461;
-    transform: rotate(495deg) translate(4px);
-}
-#menu__burger input:checked ~ #span3 {
-    background-color: #0c2461;
-    transform: rotate(45deg);
-    opacity: 0;
-}
+} 
 
 
-
-.popup-call{
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999999;
     display: none;
 }
 
-form{
-    padding: 50px 20px;
-    position: relative;
+.popup{
+    padding: 0 20px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    z-index: 99999;
     max-width: 320px;
     background-color: white;
     margin: auto;
     background-image: linear-gradient(to left bottom, #b9005c, #ff6922);
 }
 
-form input{
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 7px;
- font-size: 16px;
- border: 4px solid rgba(131, 46, 91, 0.733);
- background: rgb(245, 191, 245);
-
- outline: none;
- color: #333;
- left: 25%;
+.popup__header{
+    padding-top: 14px;
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
 }
 
-form button{
+.popup__title{
+    color: gainsboro;
+    font-size: 19px;
+}
+
+.close{
+    color: silver;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup input{
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 7px;
+    font-size: 16px;
+    border: 4px solid rgba(131, 46, 91, 0.733);
+    background: rgb(245, 191, 245);
+    outline: none;
+    color: #333;
+    left: 25%;
+}
+
+.popup button{
     text-decoration: none;
     outline: none;
     color: rgba(121, 34, 63, 0.733);
